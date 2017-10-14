@@ -1,0 +1,28 @@
+
+interface IShoppingCartCtrl {
+  allProducts: IProductInfo[];
+  demoFor: string;
+  taxRate: BigJsLibrary.BigJS;
+  subTotal: () => BigJsLibrary.BigJS;
+  taxes: () => BigJsLibrary.BigJS;
+  grandTotal: () => BigJsLibrary.BigJS;
+  shoppingCart: IShopingCartItem[];
+  cartHasItems: () => boolean;
+  itemInCart: (name: string) => boolean;
+  addItem: (name: string) => void;
+  removeItem: (name: string) => void;
+  checkOut: () => void;
+  confirmReset: () => void;
+}
+
+interface IProductInfo {
+  name: string;
+  price: number;
+}
+
+interface IShopingCartItem {
+  name: string;
+  price: BigJsLibrary.BigJS;
+  quantity: number;
+  subTotal: () => BigJsLibrary.BigJS;
+}
