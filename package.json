@@ -16,5 +16,11 @@
     "inert": "^3.1.0",
     "jquery": "^2.1.4",
     "qunitjs": "^1.19.0"
+  },
+  "devDependencies": {
+    "@types/angular": "^1.6.32",
+    "@types/big.js": "^4.0.0",
+    "jest": "^21.2.1",
+    "typescript": "^2.5.3"
   }
 }
